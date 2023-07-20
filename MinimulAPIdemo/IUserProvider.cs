@@ -1,11 +1,10 @@
-﻿namespace MinimulAPIdemo
+﻿namespace MinimulAPIdemo;
+
+public interface IUserProvider
 {
-    public interface IUserProvider
-    {
-        User Add(User user);
-        bool Delete(int id);
-        IEnumerable<User> Get();
-        User Get(int id);
-        User Update(User user);
-    }
+    User Add(User user);
+    bool Delete(int id);
+    IEnumerable<User> Get();
+    User Get(int id);
+    User Update(User user);
 }
